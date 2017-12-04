@@ -20,4 +20,6 @@ UserInterfaceFlowProtocol - A series of functions for managing views, and explic
 A UIPageViewController used to provide a navigation structure for the app's views.
 
 ## About the App This Was Designed for:
-EmojiInkMessenger was an app that allowed you to draw on a canvas using Emoji. Your drawings could then be saved as a sticker within the application and shared with friends via iMessages.
+EmojiInkMessenger was a completed app that allowed you to draw on a canvas using Emoji. Your drawings could then be saved as a sticker within the application and shared with friends via iMessages. The app didn't make it through Apple's review.
+
+This isn't a perfect solution, and I question my use of the UIPageViewController at this point, but feel free to use any code here for any purpose if you think it will help you out!
