@@ -28,7 +28,6 @@ class MainPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = CBColor.brand_green()
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,28 +37,18 @@ class MainPageViewController: UIPageViewController {
     }
     
     func insert( viewController:UIViewController ) {
-        ///DEPRECIATED WITH REMOVAL OF INITIAL VIEW
-        /*let animated = { () -> Bool in
-            if(self.setOfViewControllers.count <= 1){
-                return false
-            }
-            return true
-        }()*/
-        
         setOfViewControllers.append(viewController)
         currentViewController = viewController
         setViewControllers([currentViewController!],
                            direction: .forward,
                            animated: true,
                            completion: nil)
-        
     }
     
     func setViewController(_ viewController:UIViewController){
         self.addChildViewController(viewController)
         self.insert(viewController: viewController)
         viewController.didMove(toParentViewController: self)
-        
     }
     
     func goBack( by num:Int ){
@@ -71,7 +60,6 @@ class MainPageViewController: UIPageViewController {
                            direction: .reverse,
                            animated: true,
                            completion: nil)
-        
     }
     
 }
